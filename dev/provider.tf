@@ -4,7 +4,6 @@ provider "google" {
 }
 
 terraform {
-  experiments = [module_variable_optional_attrs]
   required_providers {
     google = {
       version = "~> 4.0"
