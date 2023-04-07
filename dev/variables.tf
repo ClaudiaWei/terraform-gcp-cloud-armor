@@ -42,7 +42,7 @@ variable "dev_rule" {
   default = {
     region_rule = {
       action        = "allow"
-      priority      = "101"
+      priority      = "100"
       description   = "allow TW, HK, JP region"
       expression    = "origin.region_code == 'TW' || origin.region_code == 'HK' || origin.region_code == 'JP'"
       preview = true
