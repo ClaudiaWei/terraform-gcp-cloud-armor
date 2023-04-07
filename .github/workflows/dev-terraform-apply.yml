@@ -1,4 +1,4 @@
-name: 'dev-terraform-plan'
+name: 'dev-terraform-apply'
 on:
   push:
     paths:
