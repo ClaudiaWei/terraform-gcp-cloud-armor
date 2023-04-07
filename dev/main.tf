@@ -23,6 +23,7 @@ resource "google_compute_security_policy" "policy" {
       description = rule.value.description
       action = rule.value.action
       priority = rule.value.priority
+      preview = rule.value.preview
       match{
         expr{
           expression = rule.value.expression
