@@ -24,7 +24,7 @@ jobs:
         terraform_version: 1.4.4
     - name: Terraform Init
       id: init
-      run: terraform init
+      run: terraform init -backend-config=backend.tfvars -reconfigure
       working-directory: dev
     - name: Terraform Apply
       run: terraform apply -auto-approve -input=false
