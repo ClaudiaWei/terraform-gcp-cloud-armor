@@ -11,3 +11,4 @@ GOOGLE_APPLICATION_CREDENTIALS=<secret file>.json terraform apply
 ```
 
 - only allow TW,HK,JP country code
+- preview only

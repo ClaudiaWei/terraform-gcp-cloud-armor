@@ -45,6 +45,7 @@ variable "dev_rule" {
       priority      = "102"
       description   = "allow TW, HK, JP region"
       expression    = "origin.region_code == 'TW' || origin.region_code == 'HK' || origin.region_code == 'JP'"
+      preview = true
     }
   }
   type = map(object({
@@ -52,6 +53,7 @@ variable "dev_rule" {
     priority      = string
     description   = string
     expression    = string
+    preview = bool
     })
   )
 }
